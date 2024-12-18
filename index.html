@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Control Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>APM</h2>
+            <nav>
+                <ul>
+                    <li>Card Management</li>
+                    <li>Door Management</li>
+                    <li>Floor Management</li>
+                    <li>Staff Management</li>
+                    <li>Company Management</li>
+                    <li>User Management</li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header>
+                <h2>User List</h2>
+            </header>
+            <section class="filter">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Company Name">
+                <button>Search</button>
+                <button>Clear</button>
+            </section>
+            <section class="user-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr No.</th>
+                            <th>Full Name</th>
+                            <th>Email ID</th>
+                            <th>Company Name</th>
+                            <th>Phone Number</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Joanne Lee</td>
+                            <td>hr@tridentmy.me</td>
+                            <td>Trident Digital Tech Pte Ltd</td>
+                            <td>12345678</td>
+                            <td>MCST Admin</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
