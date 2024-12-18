@@ -174,3 +174,25 @@ $
 
 
 
+
+
+am346@LAPTOP-B9F3S5NF MINGW64 /e/Git/demo (main)
+$ git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 3.16 KiB | 462.00 KiB/s, done.
+From https://github.com/ALOKKUMARMISHRA512/demo
+ * branch            main       -> FETCH_HEAD
+   3f0fb5d..26e30c8  main       -> origin/main
+Updating 3f0fb5d..26e30c8
+Fast-forward
+ license.txt | 151 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 151 insertions(+)
+ create mode 100644 license.txt
+
+am346@LAPTOP-B9F3S5NF MINGW64 /e/Git/demo (main)
+
+
+
