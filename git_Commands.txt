@@ -100,3 +100,77 @@ Advanced Git Commands
 	git --version
 
 
+
+
+
+am346@LAPTOP-B9F3S5NF MINGW64 /e/Git (main)
+$ git clone https://github.com/ALOKKUMARMISHRA512/demo.git~
+Cloning into 'demo.git~'...
+remote: Repository not found.
+fatal: repository 'https://github.com/ALOKKUMARMISHRA512/demo.git~/' not found
+
+am346@LAPTOP-B9F3S5NF MINGW64 /e/Git (main)
+$ git clone https://github.com/ALOKKUMARMISHRA512/demo.git
+Cloning into 'demo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+am346@LAPTOP-B9F3S5NF MINGW64 /e/Git (main)
+$ git add .
+warning: adding embedded git repository: demo
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> demo
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached demo
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+
+am346@LAPTOP-B9F3S5NF MINGW64 /e/Git (main)
+$ cd demo
+
+am346@LAPTOP-B9F3S5NF MINGW64 /e/Git/demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_Commands.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+am346@LAPTOP-B9F3S5NF MINGW64 /e/Git/demo (main)
+$ git add .
+
+am346@LAPTOP-B9F3S5NF MINGW64 /e/Git/demo (main)
+$ git commit -m "git commit"
+[main ca178aa] git commit
+ 1 file changed, 102 insertions(+)
+ create mode 100644 git_Commands.txt
+
+am346@LAPTOP-B9F3S5NF MINGW64 /e/Git/demo (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.02 KiB | 1.02 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ALOKKUMARMISHRA512/demo.git
+   fd0de71..ca178aa  main -> main
+
+am346@LAPTOP-B9F3S5NF MINGW64 /e/Git/demo (main)
+$
+
+
+
